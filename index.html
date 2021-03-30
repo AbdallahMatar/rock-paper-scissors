@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section id="head">
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+          <h4>Score</h4>
+          <p id="score">0</p>
+        </div>
+      </section>
+      <section id="content">
+        <button class="btn-circle btn-paper pick" data-choice="paper">
+          <span class="wrapper">
+            <img src="asset/img/icon-paper.svg" />
+          </span>
+        </button>
+        <button class="btn-circle btn-scissors pick" data-choice="scissors">
+          <span class="wrapper">
+            <img src="asset/img/icon-scissors.svg" />
+          </span>
+        </button>
+        <button class="btn-circle btn-rock pick" data-choice="rock">
+          <span class="wrapper">
+            <img src="asset/img/icon-rock.svg" />
+          </span>
+        </button>
+      </section>
+    </main>
+
+    <main class="selection" id="selection">
+      <div>
+        <h2>YOU PICKED</h2>
+        <button class="btn-circle btn-paper" id="user-select">
+          <span class="wrapper">
+            <img src="asset/img/icon-paper.svg" />
+          </span>
+        </button>
+      </div>
+      <div>
+        <h1 class="win" id="winner">You Win</h1>
+        <button class="btn-reload" id="reset">Play Agin</button>
+      </div>
+      <div>
+        <h2>CMPUTER PICKED</h2>
+        <button class="btn-circle btn-rock" id="computer-select">
+          <span class="wrapper">
+            <img src="asset/img/icon-rock.svg" />
+          </span>
+        </button>
+      </div>
+    </main>
+
+    <script src="asset/js/main.js"></script>
+  </body>
+</html>
